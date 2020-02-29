@@ -1,11 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
+from secrets import secrets
 
 
 def search(str):
-
-    browser = webdriver.Chrome(r"C:\Users\ackno\workspace\selenium\driver\chromedriver.exe")
+    
+    # secrets is the variable for the chrome webdriver path
+    browser = secrets
 
     
     browser.get('http://google.com/')
